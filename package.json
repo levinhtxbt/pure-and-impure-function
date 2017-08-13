@@ -1,0 +1,32 @@
+{
+  "name": "pure-sample",
+  "version": "1.0.0",
+  "description": "This is a sample pure and impure function",
+  "scripts": {
+    "build": "webpack",
+    "start": "concurrently \"webpack --watch\" \"http-server -p 9000\""
+  },
+  "homepage": "http://levinh.net",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "expect": "^1.20.2",
+    "http-server": "^0.10.0",
+    "webpack": "^3.5.3",
+    "deep-freeze": "0.0.1"
+  },
+  "babel": {
+    "presets": ["es2015"],
+    "plugins": ["transform-object-rest-spread"],
+    "ignore": [
+      "foo.js",
+      "bar/**/*.js"
+    ]
+  }
+}
